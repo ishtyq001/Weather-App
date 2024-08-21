@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #222;
+}
+
+.card{
+  width: 97%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #2af598, #009efd);
+  color: #fff;
+  margin:100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color:#555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.search button img{
+  width: 19px;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+  object-fit: cover;
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+}
+
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind{
+  font-size: 29px;
+  margin-top: -6px;
+}
+
+.weather{
+  display: none;
+}
+
+
+
+.error {
+  display: none;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+  color: #721c24;
+  border: none;
+  padding: 10px;
+  margin-top: 100px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 60%; 
+  font-size: 1.2em; 
+  font-family: 'Didot', serif;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.weather-conditions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.weather-condition {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.weather-condition:hover {
+  transform: scale(1.1);
+}
+
+.clear {
+  background-image: url('images/clear.png');
+}
+
+.cloudy {
+  background-image: url('images/clouds.png');
+}
+
+.drizzle {
+  background-image: url('images/drizzle.png');
+}
+
+.mist {
+  background-image: url('images/mist.png');
+}
+
+.snow {
+  background-image: url('images/snow.png');
+}
+
